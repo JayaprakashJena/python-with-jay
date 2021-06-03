@@ -1,5 +1,5 @@
 <html>
-<body bgcolor="red">
+<body>
    <p>Yeah! man we did it in a supreme way. </p> 
 </body>
 </html>
