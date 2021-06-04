@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <table style="text-align: center;border: 3px solid blue;width: 80%;">
+            <tr>
+                <th> idno </th>
+                <th>class</th>
+
+                <th>name</th>
+                <th>cno</th>
+                
+            </tr>
+            {% for record in data %}
+            <td>{{record.idno}}</td>
+            <td>{{record.class}}</td>
+            <td>{{record.name}}</td>
+            <td>{{record.cno}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+</html>
