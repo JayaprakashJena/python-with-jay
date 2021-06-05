@@ -9,4 +9,4 @@ def showIndex(request):
            {'idno':104,'class':'four','name':'Ravi','cno':358284667},
            ]      
            }
-    return render(request,'emp_file.html',employee)
+    return render(request,'emp_file.html',employee )

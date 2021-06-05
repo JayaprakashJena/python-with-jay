@@ -1,6 +1,6 @@
 <html>
     <body>
-        <table style="text-align: center;border: 3px solid blue;width: 80%;background-color:purple">
+        <table  border=2 align="center" bgcolor="red">
             <tr>
                 <th> idno </th>
                 <th>class</th>
@@ -9,8 +9,9 @@
                 <th>cno</th>
                 
             </tr>
+			{% for record in data %}
               <tr>
-            {% for record in data %}
+                            
             <td>{{record.idno}}</td>
             <td>{{record.class}}</td>
             <td>{{record.name}}</td>
