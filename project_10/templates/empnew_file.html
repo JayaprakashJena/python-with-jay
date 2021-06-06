@@ -24,18 +24,18 @@
                 <td>{{attributes.name}}</td>  
                 {% for subject in attributes.marks %}	
                   {% if subject < 35 %}				
-                <td style="background-color: yellow; color=black;">
+                <td style="background-color: red; color=black;">
                              
                  {{subject}}
                                                                         
                 </td>  
-                {% elif subject == 'A'%}
+                {% elif subject == 'A'%}                                                 
                 <td style="background-color: green; color=white;"> 
-				   {{subject}}
+				   {{subject}}                   
 				</td>	
           {%else%}	
-              <td style="background-color: red; color=white;">
-			    {{x}}
+              <td style="background-color: yellow; color=gray;">
+			    {{subject}}
 			  </td>		  
 				{%endif%}
                 {%endfor%} 
