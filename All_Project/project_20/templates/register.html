@@ -1,0 +1,17 @@
+{% extends 'common.html' %}
+
+{% block content %}
+    {% url "register" %}
+   <form action="" method="post"></form>
+    {% csrf_token %}
+    <table align="center" border="0">
+        <tr><th > <h1>Registration page</h1> </th> </tr>
+         <tr><td><input type="text" placeholder="Name" name="name" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></td></tr>
+    <tr><td>
+        <input type="text" placeholder="Location" name="Location" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+    </td></tr>
+    <tr><td><input type="Email" placeholder="Email(username)" name="Email" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></td></tr>
+    <tr><td><input type="password" placeholder="password" name="password" required class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></td></tr><tr><td><button type="submit">Register</button> </tr></td>
+    </table>
+
+{% endblock %}

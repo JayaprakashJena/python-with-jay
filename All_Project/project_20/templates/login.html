@@ -1,0 +1,21 @@
+{% extends 'common.html' %}
+{% block content %}
+{% load static %}
+
+
+<div class="container" style=" background-color: brown ; width: 400px; border-radius: 30px" >
+    <div>
+        <h3 style="padding: 10px ;color: chartreuse">Login Page</h3>
+    </div>
+
+   <div>   <input type="text" align="center"  placeholder="Email" name="Email"
+                          required class="form-control" aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default" style="border-radius: 20px"></div><br>
+       <div>   <input type="password" align="center"  placeholder="Password here" name="password"
+                          required class="form-control" aria-label="Sizing example input"
+                          aria-describedby="inputGroup-sizing-default" style="border-radius: 20px"></div><br>
+    <div> <button type="button" class="btn btn-warning" >Click here</button></div>
+
+ </div>
+
+{% endblock %}
